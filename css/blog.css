@@ -32,8 +32,10 @@
     width: 90%;
   }
 }
-.all-blog #blog-form-side .center-side .form-side .input-container {
+.all-blog #blog-form-side .center-side .form-side {
   position: relative;
+}
+.all-blog #blog-form-side .center-side .form-side .input-container {
   gap: 1;
   display: flex;
   width: 100%;
@@ -63,6 +65,30 @@
   color: #24A9E1;
   text-align: center;
 }
+.all-blog #blog-form-side .center-side .form-side .input-container .form-span .blog-main-ul {
+  position: absolute;
+  transition: 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  padding-top: 5px;
+}
+.all-blog #blog-form-side .center-side .form-side .input-container .form-span .blog-main-ul li {
+  width: 100px;
+  background: #FFFDFD;
+  text-align: start;
+  color: #24A9E1;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+.all-blog #blog-form-side .center-side .form-side .input-container .form-span .blog-main-ul li:hover {
+  color: #FFFFFF;
+  background: #24A9E1;
+}
+.all-blog #blog-form-side .center-side .form-side .input-container .form-span .blog-main-ul.active-ul {
+  opacity: 1;
+  visibility: visible;
+}
 @media screen and (max-width: 768px) {
   .all-blog #blog-form-side .center-side .form-side .input-container .form-span {
     font-size: 15px;
@@ -74,7 +100,8 @@
   }
 }
 .all-blog #blog-card {
-  padding-top: 100px;
+  margin-top: 150px;
+  margin-bottom: 100px;
   position: relative;
 }
 .all-blog #blog-card .blog-pat-logo-1, .all-blog #blog-card .blog-pat-logo-2 {
@@ -83,9 +110,20 @@
   left: 27%;
 }
 .all-blog #blog-card .blog-pat-logo-2 {
-  right: 4%;
-  left: 96%;
+  right: 5%;
+  left: 95%;
   top: 65%;
+}
+@media screen and (max-width: 992px) {
+  .all-blog #blog-card .blog-pat-logo-2 {
+    display: none;
+  }
+}
+@media (min-width: 992px) and (max-width: 1250px) {
+  .all-blog #blog-card .blog-pat-logo-2 {
+    left: 50%;
+    right: 50%;
+  }
 }
 .all-blog #blog-card .blog-side .blog-card {
   height: 617px;
@@ -153,6 +191,7 @@
   border-radius: 15px;
   border: none;
   text-decoration: none;
+  transition: 0.3s ease;
 }
 .all-blog #blog-card .blog-side .blog-card .blog-content-side .blog-button .button p {
   font-family: "Poppins", sans-serif;
@@ -165,4 +204,105 @@
   text-align: center;
   cursor: pointer;
   color: #FAFAFA;
+}
+.all-blog #blog-card .blog-side .blog-card .blog-content-side .blog-button .button:hover {
+  background: #FFFFFF;
+}
+.all-blog #blog-card .blog-side .blog-card .blog-content-side .blog-button .button:hover p {
+  color: #24A9E1;
+}
+
+#loader {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0%;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: #fff;
+  z-index: 100;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+#loader .educal-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  width: 25%;
+}
+#loader .educal-center .text {
+  text-align: center;
+}
+#loader .educal-center .text .educal {
+  padding-bottom: 10px;
+}
+#loader .educal-center .text .pen-animation {
+  position: relative;
+  height: 3px;
+  width: 100%;
+  background-color: var(--loader-before-cl);
+}
+#loader .educal-center .text .pen-animation .pen {
+  position: absolute;
+  top: -62px;
+  left: 0%;
+  -webkit-animation: loading;
+          animation: loading;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: cubic-bezier(0.75, 0.04, 0, 0.86);
+          animation-timing-function: cubic-bezier(0.75, 0.04, 0, 0.86);
+}
+#loader .educal-center .text .pen-animation::before {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  z-index: 100;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  -webkit-animation: loading;
+          animation: loading;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: cubic-bezier(0.75, 0.04, 0, 0.86);
+          animation-timing-function: cubic-bezier(0.75, 0.04, 0, 0.86);
+}
+@-webkit-keyframes loading {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+@keyframes loading {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+#loader.active-loader {
+  visibility: visible;
+  opacity: 1;
 }/*# sourceMappingURL=blog.css.map */
