@@ -1,0 +1,100 @@
+@import '_breakpoint.scss';
+@import '_variable.scss';
+
+
+.all-blog {
+    #blog-head {
+        padding-top: 20px;
+
+        .icon-side {
+            .blog-li {
+                padding: 0px 10px;
+
+                .blog-span {
+                    font-size: 15px;
+                    color: #83868C;
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 62.74%;
+                    /* or 9px */
+
+                    letter-spacing: 0.005em;
+                }
+            }
+        }
+    }
+
+    #blog-form-side {
+        width: 60%;
+        margin: auto;
+        padding-top: 50px;
+        @include rsp(768px){
+            width: 80%;
+        }
+        @include betweenRsp(768px, 1400px){
+            width: 90%; 
+        }
+        .center-side {
+            .form-side {
+                .input-container {
+                    position: relative;
+                    gap: 1;
+                    display: flex;
+                    width: 100%;
+                    margin-bottom: 15px;
+                    height: 60px;
+                    background: #FFFDFD;
+                    box-shadow: inset 0px 3px 4px rgba(36, 169, 225, 0.15);
+
+                    .input-img {
+                        left: 0.04%;
+                        right: 0%;
+                        top: 0%;
+                        bottom: 0%;
+                        width: 20px;
+                        margin-left: 20px;
+                        color: #24A9E1;
+                    }
+
+                    .input-field {
+                        border: none;
+                        outline: none;
+                        background-color: #FFFDFD;
+
+                        width: 70%;
+                    }
+
+                    .form-span {
+                       margin-right: 20px;
+                        cursor: pointer;
+                        color:  #24A9E1 ;
+                        text-align: center;
+                        @include rsp(768px){
+                           font-size: 15px;
+                        }
+                       
+                        i{
+                            img{
+                                @include rsp(768px){
+                                   width: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    #blog-card{
+        padding-top: 150px;
+        .blog-side{
+            .blog-card{
+             
+                
+            }
+        }
+    }
+}
