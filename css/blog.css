@@ -1,0 +1,168 @@
+.all-blog {
+  background: #ECEDF2;
+}
+.all-blog #blog-head {
+  padding-top: 20px;
+}
+.all-blog #blog-head .icon-side .blog-li {
+  padding: 0px 10px;
+}
+.all-blog #blog-head .icon-side .blog-li .blog-span {
+  font-size: 15px;
+  color: #83868C;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 62.74%;
+  /* or 9px */
+  letter-spacing: 0.005em;
+}
+.all-blog #blog-form-side {
+  width: 60%;
+  margin: auto;
+  padding-top: 50px;
+}
+@media screen and (max-width: 768px) {
+  .all-blog #blog-form-side {
+    width: 80%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1400px) {
+  .all-blog #blog-form-side {
+    width: 90%;
+  }
+}
+.all-blog #blog-form-side .center-side .form-side .input-container {
+  position: relative;
+  gap: 1;
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+  height: 60px;
+  background: #FFFDFD;
+  box-shadow: inset 0px 3px 4px rgba(36, 169, 225, 0.15);
+}
+.all-blog #blog-form-side .center-side .form-side .input-container .input-img {
+  left: 0.04%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  width: 20px;
+  margin-left: 20px;
+  color: #24A9E1;
+}
+.all-blog #blog-form-side .center-side .form-side .input-container .input-field {
+  border: none;
+  outline: none;
+  background-color: #FFFDFD;
+  width: 70%;
+}
+.all-blog #blog-form-side .center-side .form-side .input-container .form-span {
+  margin-right: 20px;
+  cursor: pointer;
+  color: #24A9E1;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .all-blog #blog-form-side .center-side .form-side .input-container .form-span {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .all-blog #blog-form-side .center-side .form-side .input-container .form-span i img {
+    width: 15px;
+  }
+}
+.all-blog #blog-card {
+  padding-top: 100px;
+  position: relative;
+}
+.all-blog #blog-card .blog-pat-logo-1, .all-blog #blog-card .blog-pat-logo-2 {
+  position: absolute;
+  top: 50%;
+  left: 27%;
+}
+.all-blog #blog-card .blog-pat-logo-2 {
+  right: 4%;
+  left: 96%;
+  top: 65%;
+}
+.all-blog #blog-card .blog-side .blog-card {
+  height: 617px;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 1;
+  padding: 30px;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .all-blog #blog-card .blog-side .blog-card {
+    padding: 0;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .all-blog #blog-card .blog-side .blog-card {
+    padding: 0;
+  }
+}
+.all-blog #blog-card .blog-side .blog-card .blog-content-side {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px 30px 10px;
+  background-color: #FFFFFF;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.all-blog #blog-card .blog-side .blog-card .blog-content-side .blog-date {
+  padding: 10px 0px;
+}
+.all-blog #blog-card .blog-side .blog-card .blog-content-side .blog-date .date {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 550;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+  text-align: center;
+  color: #000000;
+}
+.all-blog #blog-card .blog-side .blog-card .blog-content-side .blog-title {
+  padding: 30px 50px 30px 0px;
+}
+.all-blog #blog-card .blog-side .blog-card .blog-content-side .blog-title .title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+.all-blog #blog-card .blog-side .blog-card .blog-content-side .blog-description {
+  padding: 30px 50px 30px 0px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+.all-blog #blog-card .blog-side .blog-card .blog-content-side .blog-button {
+  padding-top: 20px;
+}
+.all-blog #blog-card .blog-side .blog-card .blog-content-side .blog-button .button {
+  background: #24A9E1;
+  border-radius: 15px;
+  border: none;
+  text-decoration: none;
+}
+.all-blog #blog-card .blog-side .blog-card .blog-content-side .blog-button .button p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  margin: 0;
+  /* identical to box height */
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  color: #FAFAFA;
+}/*# sourceMappingURL=blog.css.map */
