@@ -3,6 +3,8 @@
 
 
 .all-blog {
+    background: 
+    #ECEDF2;
     #blog-head {
         padding-top: 20px;
 
@@ -29,12 +31,15 @@
         width: 60%;
         margin: auto;
         padding-top: 50px;
-        @include rsp(768px){
+
+        @include rsp(768px) {
             width: 80%;
         }
-        @include betweenRsp(768px, 1400px){
-            width: 90%; 
+
+        @include betweenRsp(768px, 1400px) {
+            width: 90%;
         }
+
         .center-side {
             .form-side {
                 .input-container {
@@ -66,18 +71,19 @@
                     }
 
                     .form-span {
-                       margin-right: 20px;
+                        margin-right: 20px;
                         cursor: pointer;
-                        color:  #24A9E1 ;
+                        color: #24A9E1;
                         text-align: center;
-                        @include rsp(768px){
-                           font-size: 15px;
+
+                        @include rsp(768px) {
+                            font-size: 15px;
                         }
-                       
-                        i{
-                            img{
-                                @include rsp(768px){
-                                   width: 15px;
+
+                        i {
+                            img {
+                                @include rsp(768px) {
+                                    width: 15px;
                                 }
                             }
                         }
@@ -88,13 +94,112 @@
         }
     }
 
-    #blog-card{
-        padding-top: 150px;
-        .blog-side{
-            .blog-card{
-             
-                
+    #blog-card {
+        padding-top: 100px;
+        position: relative;
+        .blog-pat-logo-1{
+            position: absolute;
+            top: 50%;
+            left: 27%;
+            
+        }
+        .blog-pat-logo-2{
+            right: 4%;
+            left: 96%;
+            top: 65%;
+            @extend .blog-pat-logo-1;
+           
+        }
+        .blog-side {
+            .blog-card {
+                height: 617px;
+                margin-bottom: 50px;
+                position: relative;
+                z-index: 1;
+                @include betweenRsp(768px, 992px){
+                    padding: 0;
+                }
+                @include betweenRsp(992px, 1200px){
+                    padding: 0;
+                }
+                padding: 30px;
+               
+                .blog-content-side {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 10px 0px 30px 10px ;
+                    background-color: #FFFFFF;
+                    border-bottom-left-radius:25px ;
+                    border-bottom-right-radius:25px ;
+                    .blog-date {
+                        padding: 10px 0px;
+
+                        .date {
+                            font-family: 'Poppins', sans-serif;
+                            font-style: normal;
+                            font-weight: 550;
+                            font-size: 18px;
+                            line-height: 27px;
+                            /* identical to box height */
+
+                            text-align: center;
+
+                            color: #000000;
+                        }
+                    }
+
+                    .blog-title {
+                        padding: 30px 50px 30px 0px;
+
+                        .title {
+                            font-family: 'Poppins', sans-serif;
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 24px;
+
+                            color: #000000;
+                        }
+                    }
+
+                    .blog-description {
+
+                        padding: 30px 50px 30px 0px;
+
+                        font-family: 'Poppins', sans-serif;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                     
+                        color: #000000;
+
+                    }
+
+                    .blog-button {
+                        padding-top: 20px;
+                        .button {
+                            background: #24A9E1;
+                            border-radius: 15px;
+                            border: none;
+                            text-decoration: none;
+                            p {
+                                font-family: 'Poppins', sans-serif;
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 20px;
+                                margin: 0;
+                                /* identical to box height */
+                                padding: 10px;
+                                text-align: center;
+                                cursor: pointer;
+                                color: #FAFAFA;
+                            }
+                        }
+                    }
+                }
             }
         }
+        
     }
 }
